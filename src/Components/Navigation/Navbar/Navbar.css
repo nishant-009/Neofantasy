@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+nav {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  padding: 8px 24px !important;
+}
+
+nav .nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h3 {
+  font-family: "Bebas Neue", cursive;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+nav .nav-right {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+nav .nav-right .nav-btn {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 5px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav .nav-right a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .nav-right a:hover {
+  text-decoration: underline;
+}
