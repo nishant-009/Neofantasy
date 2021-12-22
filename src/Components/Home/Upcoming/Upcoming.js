@@ -30,7 +30,7 @@ const Upcoming = () => {
                 <div className="right">
                     <div className="match-info d-flex flex-column justify-content-between w-100 text-center text-lg-start">
                         <p>03 h : 20 m</p>
-                        <p className="foto text-dark">GoTo Match</p>
+                        <p className="text-dark">GoTo Match</p>
                         <p className="silent">View My All Upcoming  Games</p>
                     </div>
                 </div>

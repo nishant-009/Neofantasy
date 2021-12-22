@@ -58,6 +58,10 @@
   line-height: 24px;
 }
 
+.upcoming .right .text-dark {
+  font-weight: 500;
+}
+
 .upcoming .right .silent {
   font-style: italic;
   font-weight: bold;

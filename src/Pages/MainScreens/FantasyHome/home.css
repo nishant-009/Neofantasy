@@ -28,6 +28,10 @@
   color: #000000;
 }
 
+#tab .css-1ujykiq-MuiButtonBase-root-MuiTab-root {
+  text-transform: capitalize !important;
+}
+
 .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
   background-color: #fff;
 }

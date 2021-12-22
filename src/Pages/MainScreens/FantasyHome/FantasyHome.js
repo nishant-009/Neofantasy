@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react'
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -52,12 +53,77 @@ const FantasyHome = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    // Hide upcoming event tab
+    const [hide, setHide] = useState()
+
+    // Cards
+    const Cricket = [
+        {
+            match: "#1",
+            title: "India Tour of Srilanka",
+            team1: "IN",
+            team2: "SL",
+            entries: "250+",
+            starting: "03 h : 20 m"
+        },
+        {
+            match: "#2",
+            title: "India Vs Srilanka",
+            team1: "IN",
+            team2: "SL",
+            entries: "250+",
+            starting: "03 h : 20 m"
+        },
+        {
+            match: "#3",
+            title: "India Vs Srilanka",
+            team1: "IN",
+            team2: "SL",
+            entries: "250+",
+            starting: "03 h : 20 m"
+        },
+    ]
+
+    const Kabbadi = [
+        {
+            match: "#1",
+            title: "India Tour of Srilanka",
+            team1: "IN",
+            team2: "SL",
+            entries: "250+",
+            starting: "03 h : 20 m"
+        },
+        {
+            match: "#2",
+            title: "India Vs Srilanka",
+            team1: "IN",
+            team2: "SL",
+            entries: "250+",
+            starting: "03 h : 20 m"
+        },
+    ]
+
+    const Football = [
+        {
+            match: "#1",
+            title: "India Tour of Srilanka",
+            team1: "IN",
+            team2: "SL",
+            entries: "250+",
+            starting: "03 h : 20 m"
+        },
+    ]
+
+
     return (
         <>
             <Navbar />
-            <Upcoming></Upcoming>
+            <div className={hide ? "d-none" : "d-flex"}>
+                <Upcoming ></Upcoming>
+            </div>
 
-            <div className="container mx-auto d-flex align-items-center justify-content-center p-0 h-100 w-100 pb-3">
+            <div className={`container mx-auto d-flex align-items-center justify-content-center p-0 h-100 w-100 pb-3 ${hide ? "mt-5" : ""}`}>
 
                 <Box id="tab" sx={{ width: "100%" }} className='mt-3'>
                     <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -68,9 +134,9 @@ const FantasyHome = () => {
                             centered
                             variant="fullWidth"
                         >
-                            <Tab label="Cricket" {...a11yProps(0)} />
-                            <Tab label="Kabbadi" {...a11yProps(1)} />
-                            <Tab label="Football" {...a11yProps(2)} />
+                            <Tab label="Cricket" {...a11yProps(0)} onClick={() => setHide(false)} />
+                            <Tab label="Kabbadi" {...a11yProps(1)} onClick={() => setHide(true)} />
+                            <Tab label="Football" {...a11yProps(2)} onClick={() => setHide(true)} />
                         </Tabs>
                     </Box>
                     <Stack direction="row" spacing={2} id="chip" className="mt-3 px-3 pb-1 flex-wrap justify-align-content-around d-none d-md-flex">
@@ -82,21 +148,38 @@ const FantasyHome = () => {
                     </Stack>
                     <TabPanel value={value} index={0}>
                         <div className="row mx-auto w-100 g-4">
-                            <Card></Card>
-                            <Card></Card>
-                            <Card></Card>
-                            <Card></Card>
+                            {Cricket.map((currElem) => {
+                                const { match, title, team1, team2, entries, starting } = currElem;
+                                return (
+                                    <Card match={match} title={title} team1={team1} team2={team2} entries={entries}
+                                        starting={starting}
+                                    />
+                                )
+                            })}
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
                         <div className="row mx-auto w-100 g-4">
-                            <Card></Card>
-                            <Card></Card>
+                            {Kabbadi.map((currElem) => {
+                                const { match, title, team1, team2, entries, starting } = currElem;
+                                return (
+                                    <Card match={match} title={title} team1={team1} team2={team2} entries={entries}
+                                        starting={starting}
+                                    />
+                                )
+                            })}
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={2}>
                         <div className="row mx-auto w-100 g-4">
-                            <Card></Card>
+                            {Football.map((currElem) => {
+                                const { match, title, team1, team2, entries, starting } = currElem;
+                                return (
+                                    <Card match={match} title={title} team1={team1} team2={team2} entries={entries}
+                                        starting={starting}
+                                    />
+                                )
+                            })}
                         </div>
                     </TabPanel>
                 </Box>
