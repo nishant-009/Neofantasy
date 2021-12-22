@@ -1,0 +1,68 @@
+.upcoming {
+  margin-top: 54px;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: left;
+}
+
+.upcoming .left p {
+  font-weight: 500;
+  color: #000000;
+}
+
+.upcoming .match-no p {
+  color: #0f2865;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.upcoming .match-title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.upcoming .card-flag {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  margin: 24px auto;
+}
+
+.upcoming .match-flag p {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+.upcoming .entries h5,
+.starting h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.upcoming .entries p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f2865;
+}
+
+.upcoming .right p {
+  font-size: 18px;
+  line-height: 36px;
+  color: #ee203b;
+  line-height: 24px;
+}
+
+.upcoming .right .silent {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+  /* line-height: 24px; */
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+}

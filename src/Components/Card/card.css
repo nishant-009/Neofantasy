@@ -1,0 +1,66 @@
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+  min-width: fit-content;
+  /* max-width: 400px;
+  max-height: 295px; */
+}
+
+.card .match-no p {
+  color: #0f2865;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card .match-title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.card .card-flag {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  margin: 24px auto;
+}
+
+.card .match-flag p {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+.card .entries h5,
+.starting h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card .entries p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f2865;
+}
+
+.card .starting p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #ee203b;
+}
+
+.card button {
+  background: #ffffff;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  align-items: center;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+}

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../../Components/Navigation/Navbar/Navbar'
-import { } from './LoginPage.css'
 
-export default class LoginPage extends Component {
+export default class LoginPassword extends Component {
     render() {
         return (
             <>
@@ -15,12 +14,17 @@ export default class LoginPage extends Component {
                                 <img src="./assests/Login/FormCards.png" alt="Cards" srcset="" />
                             </div>
                             <div className="col-sm-12 col-lg-4">
-                                <h1>Login <br /> To Continue</h1>
+                                <h1>Welcome</h1>
+                                <h4 className='text-start'>@Username</h4>
 
                                 <form className='mt-4'>
-                                    <input type="text" placeholder='Your Email or Username Here' className='mb-3' />
+                                    <input type="password" placeholder='Your Password Here' className='mb-3' />
 
                                     <button type='submit'>Continue</button>
+
+                                    <p className='silent-text mt-2'>
+                                        By Proceeding, I agree to <u>T&C</u> & <u>Privacy Policy</u>
+                                    </p>
 
                                     <img src="./assests/Login/OR.png" alt="OR" className=' mt-3 img-fluid' />
                                 </form>

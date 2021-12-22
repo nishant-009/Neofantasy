@@ -42,3 +42,29 @@ nav .nav-right a {
 nav .nav-right a:hover {
   text-decoration: underline;
 }
+
+nav ul {
+  margin-left: 35px;
+}
+
+nav ul li {
+  margin: 0 0.7rem;
+  font-size: 19px;
+  font-weight: 600;
+  opacity: 0.5;
+  position: relative;
+}
+
+nav ul li.active {
+  opacity: 1;
+}
+
+nav ul li.active:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  bottom: -13px;
+}

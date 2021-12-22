@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../../Components/Navigation/Navbar/Navbar'
-import { } from './LoginPage.css'
 
-export default class LoginPage extends Component {
+export default class Signup extends Component {
     render() {
         return (
             <>
@@ -15,19 +14,19 @@ export default class LoginPage extends Component {
                                 <img src="./assests/Login/FormCards.png" alt="Cards" srcset="" />
                             </div>
                             <div className="col-sm-12 col-lg-4">
-                                <h1>Login <br /> To Continue</h1>
+                                <h1>Sign-up</h1><br />
+                                <h4>For neofantasy</h4>
 
                                 <form className='mt-4'>
-                                    <input type="text" placeholder='Your Email or Username Here' className='mb-3' />
+                                    <input type="email" placeholder='Enter Email ID' className='mb-3' />
+
+                                    <input type="tel" placeholder='Enter Phone Number' className='mb-3' />
+
+                                    <input type="text" placeholder='Entyer Date of Birth (DD/MM/YY)' className='mb-3' />
 
                                     <button type='submit'>Continue</button>
-
-                                    <img src="./assests/Login/OR.png" alt="OR" className=' mt-3 img-fluid' />
                                 </form>
-                                <button type='submit' className='mt-3 google-btn'>
-                                    <img src="./assests/Login/Google icon.png" alt="google" className='me-2 img-fluid' />
-                                    Continue with Google
-                                </button>
+
                             </div>
 
                         </div>

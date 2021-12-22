@@ -1,0 +1,45 @@
+#tab .MuiTabs-flexContainer {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#tab .MuiTabs-scroller {
+  padding: 0 1rem;
+}
+
+#tab .MuiTabs-indicator {
+  display: none;
+}
+
+#tab .css-8je8zh-MuiTouchRipple-root {
+  display: none;
+}
+
+#tab .css-19kzrtu {
+  padding: 0;
+  padding-top: 1.2rem;
+}
+
+#tab .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+}
+
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background-color: #fff;
+}
+
+#tab .MuiChip-root {
+  background: #aab8c6;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#tab .MuiChip-label {
+  font-weight: 600;
+  padding: 0.2rem 1.5rem !important;
+}
