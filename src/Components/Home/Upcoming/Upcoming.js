@@ -1,5 +1,7 @@
 import React from 'react'
 import './Upcoming.css'
+import Team1Flag from '../../../assests/Flags/Srilanka.png'
+import Team2Flag from '../../../assests/Flags/India.png'
 
 const Upcoming = () => {
     return (
@@ -17,13 +19,13 @@ const Upcoming = () => {
                 <div className="center">
                     <div className="match-flag d-flex justify-content-center align-items-center ">
                         <div className="card-flag">
-                            <img src="/assests/Flags/SriLanka.png" alt="" className='img-fluid' />
+                            <img src={Team1Flag} alt="" className='img-fluid' />
                         </div>
                         <p>Sl</p>
                         <span>vs</span>
                         <p>IND</p>
                         <div className="card-flag">
-                            <img src="/assests/Flags/India.png" alt="" className='img-fluid' />
+                            <img src={Team2Flag} alt="" className='img-fluid' />
                         </div>
                     </div>
                 </div>

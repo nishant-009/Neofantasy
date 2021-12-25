@@ -1,19 +1,13 @@
-.loginPage {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../../assests/sports-stadium-bg.png");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
 .loginPage .login-container {
   margin: 30px auto;
   background: rgba(255, 255, 255, 0.489);
   backdrop-filter: blur(16px);
-  width: 1195.6px;
+  max-width: 1195.6px;
   border-radius: 8px;
   overflow: hidden;
   font-family: Poppins;
+  min-width: 330px !important;
+  max-height: 70vh;
 }
 
 .loginPage .login-container .row .col-8 img {
@@ -22,8 +16,6 @@
 
 .loginPage .login-container .row .col-lg-4 {
   background: rgba(255, 255, 255, 0.6);
-  /* Background Blur */
-
   backdrop-filter: blur(16px);
   padding: 24px;
 }
@@ -45,7 +37,7 @@
   font-size: 40px;
   font-family: Bebas Neue;
   text-align: left;
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
 .loginPage form {
@@ -91,4 +83,10 @@
   color: #666666;
   font-size: 14px;
   text-align: center;
+}
+
+@media only screen and (max-width: 475px) {
+  .loginPage .login-container .row .col-lg-4 h1 {
+    font-size: 50px;
+  }
 }

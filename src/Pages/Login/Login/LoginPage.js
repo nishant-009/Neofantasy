@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../../../Components/Navigation/Navbar/Navbar'
 import { } from './LoginPage.css'
+// import { NavLink } from 'react-router-dom'
 
 export default class LoginPage extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class LoginPage extends Component {
             <>
                 <div className="container-fluid loginPage m-0 p-0">
                     <Navbar />
-                    <div className="login-container container">
+                    <div className="login-container container w-75 mx-auto">
 
                         <div className="row">
                             <div className="col-8 d-none d-lg-block">
@@ -20,7 +21,9 @@ export default class LoginPage extends Component {
                                 <form className='mt-4'>
                                     <input type="text" placeholder='Your Email or Username Here' className='mb-3' />
 
-                                    <button type='submit'>Continue</button>
+                                    {/* <NavLink to="/password" className="w-100"> */}
+                                    <button>Continue</button>
+                                    {/* </NavLink> */}
 
                                     <img src="./assests/Login/OR.png" alt="OR" className=' mt-3 img-fluid' />
                                 </form>

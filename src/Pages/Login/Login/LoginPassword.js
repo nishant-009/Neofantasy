@@ -7,7 +7,7 @@ export default class LoginPassword extends Component {
             <>
                 <div className="container-fluid loginPage m-0 p-0">
                     <Navbar />
-                    <div className="login-container container">
+                    <div className="login-container container w-75">
 
                         <div className="row">
                             <div className="col-8 d-none d-lg-block">

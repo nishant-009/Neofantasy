@@ -3,10 +3,12 @@
   backdrop-filter: blur(16px);
   border-radius: 8px;
   overflow: hidden;
+  height: 50px;
+  align-items: center;
 }
 
 #tab .MuiTabs-scroller {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 #tab .MuiTabs-indicator {
@@ -23,13 +25,47 @@
 }
 
 #tab .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
   color: #000000;
+  font-size: 1.1rem;
+}
+
+#tab .css-1nppm96-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  font-weight: 700;
+  color: #000000 !important;
+  font-size: 1.1rem;
+  text-transform: capitalize !important;
+  background-color: #fff;
+  filter: grayscale(0);
+  padding: auto;
+  opacity: 1;
+}
+
+#tab .css-1nppm96-MuiButtonBase-root-MuiTab-root {
+  opacity: 0.5;
+  font-size: 1.1rem;
+  filter: grayscale(1);
+}
+
+#tab button {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#tab .css-1pqm26d-MuiAvatar-img {
+  width: 50%;
+  height: auto;
+}
+
+#tab .css-1nppm96-MuiButtonBase-root-MuiTab-root > .MuiTab-iconWrapper {
+  margin: 0;
 }
 
 #tab .css-1ujykiq-MuiButtonBase-root-MuiTab-root {
   text-transform: capitalize !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00000074;
 }
 
 .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {

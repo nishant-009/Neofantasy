@@ -53,6 +53,7 @@ nav ul li {
   font-weight: 600;
   opacity: 0.5;
   position: relative;
+  cursor: pointer;
 }
 
 nav ul li.active {

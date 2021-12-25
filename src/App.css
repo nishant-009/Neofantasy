@@ -1,9 +1,11 @@
 .App {
   text-align: center;
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
 }
 
 .hide {
   display: none !important;
+}
+
+.mt-6 {
+  margin-top: 10vh;
 }

@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import { } from './card.css'
 
-export default class Card extends Component {
+export default class Livecard extends Component {
     render() {
         return (
             <>
-                <div className="col-sm-12 col-md-6 col-lg-4 px-3 px-lg-3  ">
+                <div className="col-sm-12 col-md-6 col-lg-4  px-3 px-lg-3   ">
                     <div className="card">
                         <div className="card-content d-flex flex-column justify-content-between align-items-center py-3 px-2 px-md-4">
-                            <div className="match-no ">
+                            <div className="match-no">
                                 <p>Match {this.props.match}</p>
                             </div>
                             <div className="match-title">
@@ -26,14 +25,19 @@ export default class Card extends Component {
                                 </div>
                             </div>
 
-                            <div className="match-info d-flex flex-row align-items-center justify-content-between w-100">
-                                <div className="entries">
-                                    <div className=""><h5>Entries</h5></div>
-                                    <div className=""><p>{this.props.entries}</p></div>
+                            <div className="match-info d-flex flex-row align-items-end justify-content-between w-100">
+                                <div className='d-flex'>
+                                    <div className="rank ">
+                                        <div className=""><h5>Your Rank</h5></div>
+                                        <div className=""><p>#{this.props.rank}</p></div>
+                                    </div>
+                                    <div className="points ms-3">
+                                        <div className=""><h5>Your Points</h5></div>
+                                        <div className=""><p>{this.props.points}</p></div>
+                                    </div>
                                 </div>
-                                <div className="starting text-start">
-                                    <div className=""><h5>Starting in</h5></div>
-                                    <div className=""><p>{this.props.starting}</p></div>
+                                <div className="live ">
+                                    <h3>Live</h3>
                                 </div>
                             </div>
                         </div>

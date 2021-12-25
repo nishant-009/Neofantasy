@@ -5,6 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  /* overflow: hidden; */
 }
 
 .h1,
@@ -29,7 +31,7 @@ dl {
 
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../public/assests/sports-stadium-bg.png);
+    url(./assests/sports-stadium-bg.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
