@@ -2,131 +2,145 @@ import React from 'react'
 import './LiveGame1.css'
 import PakistanFlag from '../../../../../assests/PakistanFlag.png'
 import IndiaFlag from '../../../../../assests/IndiaFlag.png'
+import Navbar from '../../../../../Components/Navigation/Navbar/Navbar2'
 
 const LiveGame1 = () => {
     return (
         <>
-            <div className="fluid m-0 d-flex  m-0 p-0 h-100 w-100">
-                <div className='container'>
-                    <div className="mt-5 d-flex flex-row">
-
-                        <div className="MyteamCard d-flex flex-row ">
-                            <div className="Col1 d-flex flex-column">
-                                <div className="Row1"><h3><b>My Teams</b></h3></div>
-                                <div className="Row2">You have Selected</div>
-                                <div className="Row3"><h4><b>India 1</b></h4></div>
-                            </div>
-
-                            <div className="Col2 d-flex flex-column">
-                                <div><b>Change team</b></div>
-                            </div>
+            <Navbar />
+            <div className="container gameOne">
+                <div className="row mt-6 d-flex justify-content-center justify-content-lg-start align-items-center  px-3">
+                    <div className="card col-12 col-md-4 col-lg-3 me-md-3">
+                        <h3>My Teams</h3>
+                        <p className='silent-text text-start'>You have selected</p>
+                        <h4>India 1</h4>
+                        <div className="badge">
+                            <p>Change Team</p>
                         </div>
-
-                        <div className="PoolCard d-flex flex-row">
-                            <div className="Col1 d-flex flex-column">
-                                <div className="Row1"><h3><b>My Pools</b></h3></div>
-                                <div className="Row2">You have Selected</div>
-                                <div className="Row3"><h4><b>Pool #12, Pool #16</b></h4></div>
-                            </div>
-
-                            <div className="Col2 d-flex flex-column">
-                                <div><b>Manage pool</b></div>
-                            </div>
-
-                        </div>
-
                     </div>
+                    <div className="card col-12 col-md-4 col-lg-3 me-md-3 mt-3 mt-md-0">
+                        <h3>My Pools</h3>
+                        <p className='silent-text text-start'>You have selected</p>
+                        <h4>Pool#12 , Pool#16</h4>
+                        <div className="badge">
+                            <p>Manage Pools</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div className="BigCard mt-5 d-flex flex-row justify-content-between">
-
-                        <div className="PakSquad d-flex flex-column">
-                            <div className="Batsman" style={{ textAlign: "center" }}>
-                                <p><b>Batsmen</b></p>
-                                <p>Babar Azam (c) <br /> Asif Ali <br /> Fakhar Zaman<br />Haider Ali</p>
+                <div className="row row2 mt-4 px-3">
+                    <div className="container card">
+                        <div className="row align-items-start">
+                            <div className="col-lg-2">
+                                <div className="container-fluid py-3">
+                                    <h4>Pakistan Squad</h4>
+                                    <div className="my-3">
+                                        <h5>Batsmen</h5>
+                                        <p>Babar Azam (C) </p>
+                                        <p>Babar Azam</p>
+                                        <p>Babar Azam</p>
+                                        <p>Babar Azam</p>
+                                    </div>
+                                    <div className="my-3">
+                                        <h5>Wicketkeepers</h5>
+                                        <p>Babar Azam</p>
+                                        <p>Babar Azam</p>
+                                    </div>
+                                    <div className="my-3">
+                                        <h5>Bowlers</h5>
+                                        <p>Babar Azam</p>
+                                        <p>Babar Azam</p>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div className="Wicketkeeper" style={{ textAlign: "center" }}>
-                                <p><b>Wicketkeepers</b></p>
-                                <p>Mohammad Rizwan <br />Sarfaraz Ahmed</p>
+                            <div className="col-md-8 my-4 my-md-0">
+                                <div className="container-fluid d-flex flex-column justify-content-center py-3 text-center bg-transparent filter-none">
+                                    <h4 className='text-center'>2021 ICC T20 World Cupmatch #16</h4>
+                                    <p className='silent-text-1'>Sun 24 October, 18:00 Local ( 19:30 IST )</p>
+                                    <p className='silent-text-2'>Dubai International Stadium, Dubai, UAE
+                                    </p>
+                                    <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-4">
+                                        <div className="">
+                                            <img src={PakistanFlag} alt="" className='img-fluid' />
+                                            <h4 className='mt-2'>Pakistan</h4>
+                                        </div>
+                                        <p className='silent-text my-3 my-lg-0 px-lg-4'>VS</p>
+                                        <div className="">
+                                            <img src={IndiaFlag} alt="" className='img-fluid' />
+                                            <h4 className='mt-2'>India</h4>
+                                        </div>
+                                    </div>
+                                    <div className="count-down d-flex flex-column flex-lg-row align-items-center justify-content-center mt-5">
+                                        <div className="days d-flex flex-column mx-3 mt-3 mt-lg-0">
+                                            <div className="d-flex">
+                                                <div className="block">
+                                                    <h4>0</h4>
+                                                </div>
+                                                <div className="block">
+                                                    <h4>1</h4>
+                                                </div>
+                                            </div>
+                                            <p className='silent-text mt-2'>Days</p>
+                                        </div>
+                                        <div className="hours d-flex flex-column mx-3 mt-3 mt-lg-0">
+                                            <div className="d-flex">
+                                                <div className="block">
+                                                    <h4>2</h4>
+                                                </div>
+                                                <div className="block">
+                                                    <h4>3</h4>
+                                                </div>
+                                            </div>
+                                            <p className='silent-text mt-2'>Hours</p>
+                                        </div>
+                                        <div className="minutes d-flex flex-column mx-3 mt-3 mt-lg-0">
+                                            <div className="d-flex">
+                                                <div className="block">
+                                                    <h4>4</h4>
+                                                </div>
+                                                <div className="block">
+                                                    <h4>3</h4>
+                                                </div>
+                                            </div>
+                                            <p className='silent-text mt-2'>Minutes</p>
+                                        </div>
+                                        <div className="seconds d-flex flex-column mx-3 mt-3 mt-lg-0">
+                                            <div className="d-flex">
+                                                <div className="block">
+                                                    <h4>3</h4>
+                                                </div>
+                                                <div className="block">
+                                                    <h4>6</h4>
+                                                </div>
+                                            </div>
+                                            <p className='silent-text mt-2'>Seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div className="All-rounder" style={{ textAlign: "center" }}>
-                                <p><b>All-rounders</b></p>
-                                <p>Mohammad Hafeez <br />Mohammad Nawaz<br />Mohammad Wasim<br />Shadab Khan<br />Imad Wasim <br />Shoaib Malik</p>
-                            </div>
-
-                            <div className="Bowler" style={{ textAlign: "center" }}>
-                                <p><b>Bowlers</b></p>
-                                <p>Shaeen Afridi <br />Hasan Ali<br />Haris Raut</p>
+                            <div className="col-lg-2">
+                                <div className="container-fluid py-3 ">
+                                    <h4>India Squad</h4>
+                                    <div className="my-3">
+                                        <h5>Batsmen</h5>
+                                        <p>Virat Kohli (C) </p>
+                                        <p>Virat Kohli</p>
+                                        <p>Virat Kohli</p>
+                                        <p>Virat Kohli</p>
+                                    </div>
+                                    <div className="my-3">
+                                        <h5>Wicketkeepers</h5>
+                                        <p>Virat Kohli</p>
+                                        <p>Virat Kohli</p>
+                                    </div>
+                                    <div className="my-3">
+                                        <h5>Bowlers</h5>
+                                        <p>Virat Kohli</p>
+                                        <p>Virat Kohli</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-
-                        <div className="CardCenter d-flex flex-column ">
-                            <div className="Title">
-                                <div className="Row1"><h3>2021 ICC T20 World CupMatch #16</h3></div>
-                                <div className="Row2">Sun 24 October, 18:00 Local ( 19:30 IST )</div>
-                                <div className="Row3">Dubai International Stadium, Dubai, UAE</div>
-                            </div>
-
-                            <div className="FlagImage d-flex flex-row">
-
-                                <div className="Row1">
-                                    <img src={PakistanFlag} alt='pak_flag' />
-                                    <p style={{ textAlign: "center" }}><h3>Pakistan</h3></p>
-                                </div>
-
-                                <p className="Row2">VS</p>
-
-                                <div className="Row3">
-                                    <img src={IndiaFlag} alt='ind_flag' />
-                                    <p style={{ textAlign: "center" }}><h3>India</h3></p>
-                                </div>
-
-                            </div>
-
-                            <div className="Watch d-flex flex-row">
-                                <div className="Day d-flex flex-row justify-content-around">
-                                    <div className="Row1" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>0</div>
-                                    <div className="Row2" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>1</div>
-                                </div>
-                                <div className="Hour d-flex flex-row">
-                                    <div className="Row1" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>2</div>
-                                    <div className="Row2" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>3</div>
-                                </div>
-                                <div className="Minute d-flex flex-row">
-                                    <div className="Row1" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>4</div>
-                                    <div className="Row2" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>6</div>
-                                </div>
-                                <div className="Second d-flex flex-row">
-                                    <div className="Row1" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>4</div>
-                                    <div className="Row2" style={{ color: "white", fontSize: "64px", fontWeight: "600px", textAlign: "center" }}>7</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="IndSquad d-flex flex-column">
-                            <div className="Batsman" style={{ textAlign: "center" }}>
-                                <p><b>Batsmen</b></p>
-                                <p>Virat Kohli (c)<br />Rohit Sharma<br />KL Rahul<br />Suryakumar Yadav</p>
-                            </div>
-
-                            <div className="Wicketkeeper" style={{ textAlign: "center" }}>
-                                <p><b>Wicketkeepers</b></p>
-                                <p>Rishabh Pant <br />Ishan Kishan</p>
-                            </div>
-
-                            <div className="All-rounder" style={{ textAlign: "center" }}>
-                                <p><b>All-rounders</b></p>
-                                <p>Hardik Pandya<br />Ravindra Jadeja<br />Rahul Chahar<br />Ravichandra Ashiwn<br />Azar patel</p>
-                            </div>
-
-                            <div className="Bowler" style={{ textAlign: "center" }}>
-                                <p><b>Bowlers</b></p>
-                                <p>Varun Chakravarthu <br />Jasprit Bumrah<br />Bhuvneshwar Kumar<br />Mohammed Shami</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>

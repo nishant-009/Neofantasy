@@ -15,7 +15,7 @@ import MyGames from './Pages/MainScreens/MyGames/MyGames';
 function App() {
   return (
     <>
-      <MyGames></MyGames>
+      <LiveGame1></LiveGame1>
     </>
   );
 }

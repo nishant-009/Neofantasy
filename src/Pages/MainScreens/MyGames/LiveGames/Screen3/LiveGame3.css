@@ -1,189 +1,6 @@
-.Main .ScoreBoard {
+/* Right Side */
+.Right .First {
   position: static;
-  width: 1265px;
-  height: 272px;
-  left: 0px;
-  top: 0px;
-
-  background: rgba(255, 255, 255, 0.75);
-  /* Background Blur */
-
-  backdrop-filter: blur(16px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 8px;
-}
-
-.Main .ScoreBoard .Row1 {
-  position: absolute;
-  top: 30px;
-  left: 200px;
-}
-
-.Main .ScoreBoard .Row2 {
-  position: absolute;
-  top: 30px;
-  left: 475px;
-}
-
-.Main .ScoreBoard .Row3 {
-  position: absolute;
-  top: 30px;
-  left: 720px;
-}
-
-.Main .ScoreBoard .Row4 {
-  position: absolute;
-  top: 30px;
-  left: 900px;
-}
-
-.Main .ScoreBoard .Row3 .h2 {
-  position: static;
-  width: 171px;
-  height: 72px;
-  left: 0px;
-  top: 0px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 72px;
-  /* identical to box height, or 112% */
-
-  text-align: center;
-
-  color: #000000;
-}
-
-/*Probablity*/
-.Main .WinProb {
-  display: flex;
-  justify-content: space-around;
-  padding: 24px;
-  position: static;
-  width: 603px;
-  height: 120px;
-  left: 0px;
-  top: 0px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-}
-
-.Main .WinProb .title {
-  position: absolute;
-  left: 250px;
-  padding-bottom: 100px;
-}
-
-.Main .WinProb .blue {
-  position: absolute;
-  width: 170px;
-  font-weight: 600;
-  top: 420px;
-  left: 100px;
-}
-
-.Main .WinProb .darkblue {
-  width: 320px;
-  position: absolute;
-  top: 420px;
-  left: 200px;
-}
-
-.Main .BallByBall {
-  position: static;
-  width: 603px;
-  height: 124px;
-  left: 0px;
-  top: 144px;
-
-  background: rgba(255, 255, 255, 0.6);
-  /* Background Blur */
-
-  backdrop-filter: blur(16px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 8px;
-}
-
-.Main .BallByBall .Row1 {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  left: 24px;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.Main .BallByBall .balls .ball1,
-.ball2,
-.ball3,
-.ball4,
-.ball5,
-.ball6 {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.Main .BallByBall .balls .ball7 {
-  background: #20ee97;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.Main .BallByBall .balls .ball8 {
-  background: #ee203b;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.Main .BallByBall .balls .ball9 {
-  background: #e2a042;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.Main .BallByBall .balls .ball10 {
-  background: #7c7c7c;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.Main .Commentary {
-  position: absolute;
-  width: 638px;
-  height: 379px;
-  left: 635px;
-  top: 350px;
-
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 8px;
-}
-
-.Main .Commentary .Comments {
-  background-color: rgba(255, 255, 255, 0.6);
-  padding-left: 10px;
-}
-
-.Main .MyPoints {
-  position: absolute;
-  width: 521px;
-  height: 597px;
-  left: 1300px;
-  top: 45px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  /* Smooth Blur */
-
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-  border-radius: 8px 8px 0px 0px;
-}
-
-.Main .MyPoints .First {
-  position: static;
-  width: 489px;
   height: 96px;
   left: 0px;
   top: 0px;
@@ -203,10 +20,9 @@
   border-radius: 8px;
 }
 
-.Main .MyPoints .First .pts {
+.Right .First .pts {
   padding: 10px;
   position: static;
-  width: 66px;
   height: 41px;
   left: 375px;
   top: 3.5px;
@@ -214,9 +30,8 @@
   border-radius: 8px;
 }
 
-.Main .MyPoints .Second {
+.Right .Second {
   position: static;
-  width: 489px;
   height: 96px;
   left: 0px;
   top: 0px;
@@ -235,10 +50,9 @@
   border-radius: 8px;
 }
 
-.Main .MyPoints .Second .pts {
+.Right .Second .pts {
   padding: 10px;
   position: static;
-  width: 66px;
   height: 41px;
   left: 375px;
   top: 3.5px;
@@ -246,9 +60,8 @@
   border-radius: 8px;
 }
 
-.Main .MyPoints .Third {
+.Right .Third {
   position: static;
-  width: 489px;
   height: 96px;
   left: 0px;
   top: 0px;
@@ -267,10 +80,9 @@
   border-radius: 8px;
 }
 
-.Main .MyPoints .Third .pts {
+.Right .Third .pts {
   padding: 10px;
   position: static;
-  width: 66px;
   height: 41px;
   left: 375px;
   top: 3.5px;
@@ -278,17 +90,107 @@
   border-radius: 8px;
 }
 
-.Main .MyPoints .fourth,
-.Main .MyPoints .sixth {
+.Right .fourth,
+.Right .sixth {
   align-items: center;
   padding: 10px;
-
   position: static;
-  width: 489px;
   height: 41px;
   left: 0px;
   top: 336px;
-
   background: rgba(255, 255, 255, 0.24);
   border-radius: 8px;
+}
+
+/* Left Side */
+/*Probablity bar*/
+.WinProb {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px;
+  position: static;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+.WinProb .title {
+  position: absolute;
+  left: 250px;
+  padding-bottom: 100px;
+}
+.Main .WinProb .blue {
+  position: absolute;
+  font-weight: 600;
+  top: 420px;
+  left: 100px;
+}
+.Main .WinProb .darkblue {
+  position: absolute;
+  top: 420px;
+  left: 200px;
+}
+
+/*Numofballs*/
+.balls .Row1 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 24px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.balls .balls .ball1,
+.ball2,
+.ball3,
+.ball4,
+.ball5,
+.ball6 {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.balls .balls .ball7 {
+  background: #20ee97;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.balls .balls .ball8 {
+  background: #ee203b;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.balls .balls .ball9 {
+  background: #e2a042;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.balls .balls .ball10 {
+  background: #7c7c7c;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/*Commentary*/
+
+.Commentary .Comments .Row2 .Row3 .Row4 .Row5 .Row6 .Row7 .Row8 {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Commentary .nav {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+}
+
+/*Scoreboard*/
+.Scoreboard {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
 }

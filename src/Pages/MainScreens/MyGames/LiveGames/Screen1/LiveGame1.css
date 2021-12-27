@@ -1,309 +1,100 @@
-.MyteamCard,
-.PoolCard {
-  width: 411px;
-  height: 149px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(16px);
-  border-radius: 8px;
+.gameOne .row .card {
+  padding: 0.5rem 0.7rem;
+  position: relative;
+  line-height: 40px;
+  min-width: 277px;
 }
-.MyteamCard .Col1 .Row1,
-.PoolCard .Col1 .Row1 {
+
+.gameOne .row .card .badge {
   position: absolute;
-  width: 260px;
-  height: 48px;
-  left: 16px;
-  top: 16px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  color: #000000;
-}
-.MyteamCard .Col1 .Row2,
-.PoolCard .Col1 .Row2 {
-  position: absolute;
-  width: 133px;
-  height: 100px;
-  top: 60px;
-  left: 16px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
-}
-.MyteamCard .Col1 .Row3,
-.PoolCard .Col1 .Row3 {
-  position: absolute;
-  width: 250px;
-  height: 48px;
-  top: 100px;
-  left: 16px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  color: #000000;
-}
-.MyteamCard .Col2,
-.PoolCard .Col2 {
-  padding: 4px 12px;
-  position: absolute;
-  width: 137px;
-  height: 32px;
-  left: 258px;
-  top: 10px;
+  top: 12px;
+  right: 10px;
+  color: #000;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 24px;
+  padding: 0.4rem;
+  cursor: pointer;
 }
 
-.PoolCard {
-  position: absolute;
-  left: 40%;
+.gameOne .row .card .badge:hover {
+  background-color: rgba(255, 255, 255, 0.836);
 }
 
-/*Center Big Card Css*/
-.BigCard .PakSquad,
-.IndSquad {
-  position: static;
-  width: 250px;
-  height: 650px;
-  left: 24px;
-  top: 24px;
-  background: rgba(255, 255, 255, 0.6);
-  /* Background Blur */
-  backdrop-filter: blur(16px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 8px;
-  font-family: Poppins;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
+.gameOne .row .card h3 {
+  font-weight: 700;
+  font-size: 25px;
 }
 
-.CardCenter .Title .Row1 {
-  position: absolute;
-  width: 549px;
-  height: 48px;
-  left: 460px;
-  top: 40px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
-  /* identical to box height */
-  color: #000000;
-}
-
-.CardCenter .Title .Row2 {
-  position: absolute;
-  width: 352px;
-  height: 27px;
-  left: 500px;
-  top: 75px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  /* identical to box height */
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.CardCenter .Title .Row3 {
-  position: absolute;
-  width: 327px;
-  height: 24px;
-  left: 520px;
-  top: 95px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-  color: rgba(0, 0, 0, 0.6);
-}
-
-/* .CardCenter .FlagImage .Row3 */
-
-.CardCenter .FlagImage .Row1 {
-  position: absolute;
-  width: 220px;
-  height: 128px;
-  left: 350px;
-  top: 200px;
-  border-radius: 8px;
-}
-.CardCenter .FlagImage .Row3 {
-  position: absolute;
-  width: 220px;
-  height: 128px;
-  left: 750px;
-  top: 200px;
-  border-radius: 8px;
-}
-.CardCenter .FlagImage .Row2 {
-  position: absolute;
-  width: 31px;
-  height: 36px;
-  left: 650px;
-  top: 300px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
-
-  color: rgba(0, 0, 0, 0.4);
-}
-
-/*Watch*/
-.CardCenter .Watch .Row1 .Row2 {
-  font-family: Poppins;
-  font-style: normal;
+.gameOne .row .card h4 {
   font-weight: 600;
-  font-size: 64px;
-  line-height: 96px;
-  /* identical to box height */
-
-  text-align: center;
+  font-size: 20px;
 }
 
-.CardCenter .Watch .Day .Row1 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 350px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
-}
-.CardCenter .Watch .Day .Row2 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 425px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
+.gameOne .row .card h5 {
+  font-size: 15px;
 }
 
-.CardCenter .Watch .Hour .Row1 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 530px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
-}
-.CardCenter .Watch .Hour .Row2 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 605px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
+.gameOne .row2 .col-md-2 .container-fluid p {
+  font-size: 13px;
 }
 
-.CardCenter .Watch .Minute .Row1 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 700px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
-}
-
-.CardCenter .Watch .Minute .Row2 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 775px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
-}
-.CardCenter .Watch .Second .Row1 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 875px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
-}
-
-.CardCenter .Watch .Second .Row2 {
-  position: absolute;
-  width: 64px;
-  height: 116px;
-  left: 950px;
-  top: 450px;
-  background: linear-gradient(
-    166.43deg,
-    rgba(0, 0, 0, 0.58) 0%,
-    #000000 45.48%,
-    rgba(0, 0, 0, 0.79) 95.97%
-  );
-  border-radius: 8px;
-}
-
-.BigCard {
-  position: static;
-  width: 1332px;
-  height: 716px;
-
+.gameOne .row2 .container-fluid {
   background: rgba(255, 255, 255, 0.6);
-  /* Background Blur */
   backdrop-filter: blur(16px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
+  min-width: fit-content;
+}
 
+.gameOne .row2 .container-fluid.bg-transparent {
+  backdrop-filter: blur(0px);
+}
+
+.gameOne .row2 .container-fluid .silent-text {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+}
+
+.gameOne .row2 .container-fluid .silent-text-1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.gameOne .row2 .container-fluid .silent-text-2 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+
+.gameOne .row2 .card {
   padding: 24px;
+  line-height: 24px;
+}
+
+.gameOne .row2 .count-down .block {
+  background: linear-gradient(
+    166.43deg,
+    rgba(0, 0, 0, 0.58) 0%,
+    #000000 45.48%,
+    rgba(0, 0, 0, 0.79) 95.97%
+  );
+  border-radius: 8px;
+  color: #fff;
+  margin: 0 0.3rem;
+  width: 50px;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gameOne .row2 .count-down .block h4 {
+  font-size: 50px;
+}
+
+.gameOne .row2 .count-down .flex-column .silent-text {
+  font-size: 16px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 1) rgba(0, 0, 0, 0.41) rgba(0, 0, 0, 1)
+  );
+  font-weight: 600;
 }
