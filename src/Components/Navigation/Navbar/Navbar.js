@@ -7,7 +7,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <>
-                <nav className='container-fluid d-none d-md-flex align-items-center justify-content-between fixed-top'>
+                <nav className='container-fluid d-none d-lg-flex align-items-center justify-content-between fixed-top'>
                     <div className="nav-left ">
                         <img src={Logo} alt="Logo" className='img-fluid' />
                         <h3>neofantasy</h3>

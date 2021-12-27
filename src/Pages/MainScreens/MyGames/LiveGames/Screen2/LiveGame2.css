@@ -1,156 +1,142 @@
-/* Right Side */
-.Right .temp .Hundred {
-  position: static;
-  height: 60px;
-  left: 0px;
-  top: 0px;
-
-  background: #189dce;
+.gameTwo .card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
   border-radius: 8px;
 }
 
-.Right .temp .Hundred .pts {
-  height: 40px;
-  background: #1db8f2;
-  border-radius: 8px;
-}
-
-.Right .temp .Wicket {
-  position: static;
-  height: 60px;
-  left: 0px;
-  top: 0px;
-  background: #9f8cff;
-  border-radius: 8px;
-}
-
-.Right .temp .Wicket .pts {
-  height: 40px;
-  background: #7055f6;
-  border-radius: 8px;
-}
-
-.Right .temp .Helmet {
-  position: static;
-  height: 60px;
-  left: 0px;
-  top: 0px;
-
-  background: #9f8cff;
-  border-radius: 8px;
-}
-
-.Right .temp .Helmet .pts {
-  height: 40px;
-  background: #7055f6;
-  border-radius: 8px;
-}
-
-.Right .temp .Wicket2 {
-  position: static;
-  height: 60px;
-  left: 0px;
-  top: 0px;
-
-  background: #ffbd29;
-  border-radius: 8px;
-}
-
-.Right .temp .Wicket2 .pts {
-  height: 40px;
-  background: #cc9925;
-  border-radius: 8px;
-}
-
-/* Left Side */
-/*Probablity bar*/
-.WinProb {
-  display: flex;
-  justify-content: space-around;
-  padding: 24px;
-  position: static;
-  height: 120px;
-  left: 0px;
-  top: 0px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-}
-.WinProb .title {
-  position: absolute;
-  left: 250px;
-  padding-bottom: 100px;
-}
-.Main .WinProb .blue {
-  position: absolute;
+.gameTwo .row1 h3 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
   font-weight: 600;
-  top: 420px;
-  left: 100px;
-}
-.Main .WinProb .darkblue {
-  position: absolute;
-  top: 420px;
-  left: 200px;
 }
 
-/*Numofballs*/
-.balls .Row1 {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  left: 24px;
+.gameTwo .row1 h5 {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.gameTwo .progress {
+  border-radius: 20px;
+  background-color: rgba(11, 74, 170, 1);
+  height: 12px;
+}
+
+.gameTwo .progress .progress-bar {
+  background-color: rgba(87, 151, 246, 1);
+}
+
+.gameTwo .card .center {
+  font-weight: 600;
+}
+
+.gameTwo .card .left {
+  color: rgba(11, 74, 170, 1);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.gameTwo .card .right {
+  color: rgba(11, 74, 170, 1);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.gameTwo .wickets {
   background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
 }
 
-.balls .balls .ball1,
-.ball2,
-.ball3,
-.ball4,
-.ball5,
-.ball6 {
+.gameTwo .wickets .container-fluid {
   background: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 8px;
 }
 
-.balls .balls .ball7 {
-  background: #20ee97;
+.gameTwo .wickets .runs {
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  padding: 5px;
-}
-
-.balls .balls .ball8 {
-  background: #ee203b;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.balls .balls .ball9 {
-  background: #e2a042;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.balls .balls .ball10 {
-  background: #7c7c7c;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-/*Commentary*/
-
-.Commentary .Comments .Row2 .Row3 .Row4 .Row5 .Row6 .Row7 .Row8 {
-  padding-left: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
 }
 
-.Commentary .nav {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(16px);
+.gameTwo .wickets .runs h5 {
+  font-size: 100%;
+  font-weight: 600;
 }
 
-/*Scoreboard*/
-.Scoreboard {
-  background: rgba(255, 255, 255, 0.75);
+.gameTwo .wickets .runs.out {
+  background: rgba(238, 32, 59, 1);
+}
+
+.gameTwo .wickets .runs.four {
+  background: rgba(226, 160, 66, 1);
+}
+
+.gameTwo .wickets .runs.six {
+  background: rgba(32, 238, 151, 1);
+}
+
+.gameTwo .wickets .runs.wide {
+  background: rgba(124, 124, 124, 1);
+}
+
+.gameTwo .commentary {
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(16px);
+  border-radius: 8px;
+}
+
+.gameTwo .commentary .container-fluid {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.gameTwo .commentary .container-fluid p {
+  margin: 1rem 0;
+}
+
+.gameTwo .pts-card {
+  background: rgba(24, 157, 206, 1);
+  border-radius: 8px;
+  color: #000;
+  margin: 0.8rem 0;
+}
+
+.gameTwo .pts-card.purple {
+  background: rgba(159, 140, 255, 1);
+}
+
+.gameTwo .pts-card.yellow {
+  background: rgba(255, 189, 41, 1);
+}
+
+.gameTwo .pts-card .pts {
+  background-color: rgba(29, 184, 242, 1);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.gameTwo .pts-card .pts.purple {
+  background: rgba(112, 85, 246, 1);
+}
+
+.gameTwo .pts-card .pts.yellow {
+  background: rgba(204, 153, 37, 1);
+}
+
+.gameTwo .pts-card p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.gameTwo .pts-card .pts p {
+  font-weight: 600;
+  font-size: 1rem;
 }

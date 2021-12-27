@@ -30,9 +30,9 @@ const LiveGame1 = () => {
 
                 <div className="row row2 mt-4 px-3">
                     <div className="container card">
-                        <div className="row align-items-start">
+                        <div className="row align-items-center align-items-lg-start">
                             <div className="col-lg-2">
-                                <div className="container-fluid py-3">
+                                <div className="container-fluid py-3 text-center text-lg-start">
                                     <h4>Pakistan Squad</h4>
                                     <div className="my-3">
                                         <h5>Batsmen</h5>
@@ -53,7 +53,7 @@ const LiveGame1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-8 my-4 my-md-0">
+                            <div className="col-md-8 my-4 my-lg-0 ">
                                 <div className="container-fluid d-flex flex-column justify-content-center py-3 text-center bg-transparent filter-none">
                                     <h4 className='text-center'>2021 ICC T20 World Cupmatch #16</h4>
                                     <p className='silent-text-1'>Sun 24 October, 18:00 Local ( 19:30 IST )</p>
@@ -118,8 +118,8 @@ const LiveGame1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-2">
-                                <div className="container-fluid py-3 ">
+                            <div className="col-lg-2  ">
+                                <div className="container-fluid py-3 text-center text-lg-start">
                                     <h4>India Squad</h4>
                                     <div className="my-3">
                                         <h5>Batsmen</h5>

@@ -68,6 +68,7 @@
 .gameOne .row2 .card {
   padding: 24px;
   line-height: 24px;
+  min-width: fit-content;
 }
 
 .gameOne .row2 .count-down .block {

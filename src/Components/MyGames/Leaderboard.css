@@ -1,0 +1,106 @@
+.leaderboard button,
+.leaderboard .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background: transparent;
+  width: auto;
+}
+
+.leaderboard .css-19kzrtu {
+  padding: 0;
+}
+
+.leaderboard .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #000;
+}
+
+.leaderboard .css-1ujykiq-MuiButtonBase-root-MuiTab-root {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.leaderboard .css-1aquho2-MuiTabs-indicator {
+  background-color: #000;
+  height: 4px;
+  border-radius: 20px;
+}
+
+.leaderboard .pts-card.gold {
+  background: linear-gradient(
+    91.89deg,
+    #dfa349 0.31%,
+    #edbe3f 10.68%,
+    #f0c347 28.3%,
+    #ffdf71 47.49%,
+    #f7d26a 66.15%,
+    #f8b816 88.45%,
+    #f8b816 99.85%
+  );
+  border: 1px solid #d9c878;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.leaderboard .pts-card.silver h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.leaderboard .pts-card.bronze h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.leaderboard .pts-card h3 {
+  font-weight: 600;
+  margin-right: 0.7rem;
+}
+
+.leaderboard .pts-card h5 {
+  font-size: 120%;
+}
+
+.leaderboard .pts-card.silver {
+  background: linear-gradient(
+    89.84deg,
+    #cdcaca 0.12%,
+    #dde4e9 15.7%,
+    #ffffff 40.12%,
+    #ffffff 55.71%,
+    #d7dadc 83.76%,
+    #cec7c7 99.86%
+  );
+  border: 1px solid #c6c6c6;
+  padding: 0.5rem;
+}
+
+.leaderboard .pts-card.bronze {
+  background: linear-gradient(
+    90.14deg,
+    #ed8355 0.12%,
+    #d8987c 20.24%,
+    #ffb393 43.53%,
+    #e6a88e 60.48%,
+    #fb9e76 85.89%,
+    #d78867 101.77%
+  );
+  border: 1px solid #eb885f;
+  padding: 0.5rem;
+}
+
+.leaderboard .pts-card.gold .pts {
+  background: rgba(241, 166, 26, 1);
+}
+
+.leaderboard .pts-card.silver .pts {
+  background: #c6c6c6;
+}
+
+.leaderboard .pts-card.bronze .pts {
+  background: rgba(235, 136, 95, 1);
+}
+
+.leaderboard .pts-card.other-user.card {
+  background-color: rgba(255, 255, 255, 0.592);
+  backdrop-filter: blur(0px) !important;
+}
+
+.leaderboard .pts-card.other-user h5 {
+  margin-right: 0.7rem;
+}
