@@ -1,0 +1,26 @@
+.pool .container-fluid {
+  min-width: fit-content;
+}
+
+.pool .container-fluid p,
+h5 {
+  line-height: 25px;
+}
+
+.pool .container-fluid .progress {
+  border-radius: 20px;
+  background: rgba(196, 196, 196, 0.6);
+}
+
+.pool .container-fluid .progress-bar {
+  background: rgba(15, 40, 101, 1);
+  border-radius: 20px;
+}
+
+.pool .container-fluid {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pool .container-fluid .slots p span {
+  color: rgba(0, 0, 0, 0.6);
+}

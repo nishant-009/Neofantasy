@@ -1,0 +1,9 @@
+.selectFanatay .credits-div {
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  background: rgba(15, 40, 101, 1);
+  color: white;
+}
+.selectFanatay .credits-div p {
+  font-size: 14px;
+}

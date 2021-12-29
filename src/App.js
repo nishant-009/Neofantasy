@@ -7,7 +7,6 @@ import CreatePassword from './Pages/Login/Register/CreatePassword'
 import FantasyHome from './Pages/MainScreens/FantasyHome/FantasyHome'
 import LiveGame1 from './Pages/MainScreens/MyGames/LiveGames/Screen1/LiveGame1'
 import LiveGame2 from './Pages/MainScreens/MyGames/LiveGames/Screen2/LiveGame2'
-import LiveGame3 from './Pages/MainScreens/MyGames/LiveGames/Screen3/LiveGame3'
 import MyGames from './Pages/MainScreens/MyGames/MyGames';
 
 
@@ -15,7 +14,7 @@ import MyGames from './Pages/MainScreens/MyGames/MyGames';
 function App() {
   return (
     <>
-      <LiveGame2></LiveGame2>
+      <FantasyHome></FantasyHome>
     </>
   );
 }

@@ -3,8 +3,6 @@
   backdrop-filter: blur(16px);
   border-radius: 8px;
   min-width: fit-content;
-  /* max-width: 400px;
-  max-height: 295px; */
 }
 
 .card .match-no p {

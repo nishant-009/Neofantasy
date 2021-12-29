@@ -6,7 +6,7 @@ export default class Card extends Component {
         return (
             <>
                 <div className="col-sm-12 col-md-6 col-lg-4 px-3 px-lg-3  ">
-                    <div className="card">
+                    <div className="card" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
                         <div className="card-content d-flex flex-column justify-content-between align-items-center py-3 px-2 px-md-4">
                             <div className="match-no ">
                                 <p>Match {this.props.match}</p>

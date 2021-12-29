@@ -12,6 +12,7 @@ import Navbar from '../../../Components/Navigation/Navbar/Navbar2'
 import Upcoming from '../../../Components/Home/Upcoming/Upcoming'
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import Sidebar from '../../../Components/Sidebar/Sidebar'
 // Icons
 import cricketBall from '../../../assests/Icons/cricket ball.png'
 import kabaddi from '../../../assests/Icons/Kabaddi player.png'
@@ -154,11 +155,12 @@ const FantasyHome = () => {
     return (
         <>
             <Navbar />
+            <Sidebar />
             <div className={hide ? "d-none" : "d-flex"}>
                 <Upcoming ></Upcoming>
             </div>
 
-            <div className={`container mx-auto d-flex align-items-center justify-content-center p-0 px-lg-5 h-100 w-100 pb-3 ${hide ? "mt-5" : ""} mt-mb-6`}>
+            <div className={`container mx-auto d-flex align-items-center justify-content-center p-0 px-lg-3 h-100 w-100 pb-3 ${hide ? "mt-5" : ""} mt-mb-6`}>
 
                 <Box id="tab" sx={{ width: "100%" }} className='mt-3'>
                     <Box sx={{ borderBottom: 1, borderColor: "divider" }}>

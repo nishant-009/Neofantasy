@@ -1,0 +1,30 @@
+.buildTeam .container-fluid {
+  min-width: fit-content;
+}
+
+.buildTeam .container-fluid p,
+h5 {
+  line-height: 25px;
+}
+
+.buildTeam .container-fluid .progress {
+  border-radius: 20px;
+  background: rgba(196, 196, 196, 0.6);
+}
+
+.buildTeam .container-fluid .progress-bar {
+  background: rgba(15, 40, 101, 1);
+  border-radius: 20px;
+}
+
+.buildTeam .container-fluid {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.buildTeam .container-fluid .slots p span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.blue {
+  color: rgba(15, 40, 101, 1);
+}

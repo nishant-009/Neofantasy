@@ -1,0 +1,59 @@
+.sidebar {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+.sidebar .offcanvas-header {
+  background-color: #fff;
+  padding: 0.9rem;
+}
+
+.sidebar .offcanvas-header .time {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.sidebar .offcanvas-header .time span {
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.sidebar .teams {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.8rem;
+}
+
+.sidebar .teams img {
+  width: 45px;
+}
+
+.sidebar .teams .title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  word-spacing: 10px;
+}
+
+.sidebar .teams .title span {
+  color: rgb(140, 140, 140);
+}
+
+.offcanvas button {
+  background: rgba(15, 40, 101, 1);
+  color: #fff;
+  padding: 0.7rem;
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 530px) {
+  .sidebar {
+    max-width: 350px;
+  }
+}
