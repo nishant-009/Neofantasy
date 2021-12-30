@@ -38,7 +38,7 @@
   color: rgb(140, 140, 140);
 }
 
-.offcanvas button {
+.offcanvas .next {
   background: rgba(15, 40, 101, 1);
   color: #fff;
   padding: 0.7rem;
