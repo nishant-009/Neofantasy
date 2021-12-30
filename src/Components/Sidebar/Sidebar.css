@@ -52,6 +52,30 @@
   margin: 0 auto;
 }
 
+.modal1,
+.modal2 {
+  border-radius: 8px;
+}
+
+.modal1 input {
+  border: 0;
+  border-bottom: 2px solid rgb(182, 182, 182);
+  margin-top: 1rem;
+  outline: none;
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+.modal1 button {
+  background-color: #0f2865;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
 @media only screen and (min-width: 530px) {
   .sidebar {
     max-width: 350px;
