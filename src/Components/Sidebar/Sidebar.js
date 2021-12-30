@@ -9,6 +9,7 @@ import SwipeableViews from 'react-swipeable-views';
 import Pool from './Screens/Pools/Pool';
 import BuildTeam from './Screens/BuildTeam/BuildTeam';
 import Fantasy from './Screens/SelectFantasy/SelectFantasy';
+import Confirm from './Screens/ConfirmTeam/Confirm';
 
 const steps = [
     {
@@ -21,7 +22,7 @@ const steps = [
         description: <Fantasy />
     },
     {
-        description: `Screen4`,
+        description: <Confirm />,
     },
 ];
 
@@ -72,7 +73,26 @@ const Sidebar = () => {
                 </div>
                 <div className="ps-3 pe-4">
                     <button onClick={handleNext} hidden={activeStep === maxSteps - 1} className='next'>Next</button>
-                    <button onClick={() => { alert('Done') }} hidden={activeStep !== maxSteps - 1} className='next' >Next</button>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" hidden={activeStep !== maxSteps - 1} className='next' >Save Team</button>
+                </div>
+            </div>
+
+            {/* Modal */}
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

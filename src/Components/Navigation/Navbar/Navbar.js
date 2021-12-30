@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { } from './Navbar.css'
 import Logo from '../../../assests/Logo.png'
-import { NavLink } from 'react-router-dom'
 
 export default class Navbar extends Component {
     render() {
@@ -13,9 +12,9 @@ export default class Navbar extends Component {
                         <h3>neofantasy</h3>
                     </div>
                     <div className="nav-right">
-                        <NavLink to="/"> <div className="nav-btn"> Sign Up </div> </NavLink>
-                        <NavLink to="/"> <div className="nav-btn"> About Us </div> </NavLink>
-                        <NavLink to="/"> <div className="nav-btn"> Why NeoFantasy? </div> </NavLink>
+                        <a href='#'> <div className="nav-btn"> Sign Up </div> </a>
+                        <a href='#'> <div className="nav-btn"> About Us </div> </a>
+                        <a href='#'> <div className="nav-btn"> Why NeoFantasy? </div> </a>
                     </div>
                 </nav>
             </>

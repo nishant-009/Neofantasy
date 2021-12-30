@@ -4,10 +4,8 @@
   backdrop-filter: blur(16px);
   max-width: 1195.6px;
   border-radius: 8px;
-  overflow: hidden;
   font-family: Poppins;
   min-width: 330px !important;
-  max-height: 70vh;
 }
 
 .loginPage .login-container .row .col-8 img {

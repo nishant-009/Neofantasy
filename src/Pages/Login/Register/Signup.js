@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import Navbar from '../../../Components/Navigation/Navbar/Navbar'
+import cover from '../../../assests/Login/FormCards.png'
 
 export default class Signup extends Component {
     render() {
         return (
             <>
-                <div className="container-fluid loginPage m-0 p-0">
-                    <Navbar />
+                <Navbar />
+                <div className="container-fluid loginPage p-0 mt-6">
                     <div className="login-container container">
 
                         <div className="row">
                             <div className="col-8 d-none d-lg-block">
-                                <img src="./assests/Login/FormCards.png" alt="Cards" srcset="" />
+                                <img src={cover} alt="Cards" srcset="" />
                             </div>
                             <div className="col-sm-12 col-lg-4">
                                 <h1>Sign-up</h1><br />

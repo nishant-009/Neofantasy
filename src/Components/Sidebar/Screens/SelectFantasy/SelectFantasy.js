@@ -118,7 +118,7 @@ const SelectFantasy = () => {
 
     return (
         <>
-            <div className="selectFanatay">
+            <div className="selectFanatay mb-4">
                 <div className="d-flex align-items-center justify-content-between w-100 p-3">
                     <div>
                         <h5 className='blue fw-600'>Select Your Fantasy 11</h5>
