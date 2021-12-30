@@ -11,6 +11,7 @@ import Navbar from '../../../Components/Navigation/Navbar/Navbar2'
 import Upcoming from '../../../Components/Home/Upcoming/Upcoming'
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import Sidebar from '../../../Components/Sidebar/Sidebar'
 // Flags
 import India from '../../../assests/Flags/India.png'
 import Srilanka from '../../../assests/Flags/Srilanka.png'
@@ -149,6 +150,7 @@ const MyGames = () => {
     return (
         <>
             <Navbar />
+            <Sidebar />
             <div className="container mx-auto d-flex align-items-center justify-content-center p-0 px-lg-5 h-100 w-100 pb-3 mt-5">
 
                 <Box id="tab" sx={{ width: "100%" }} className='mt-3'>
